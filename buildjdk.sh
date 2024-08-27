@@ -133,5 +133,5 @@ make JOBS=$jobs images || \
 error_code=$?
 if [ "$error_code" -ne 0 ]; then
   echo "Build failure, exited with code $error_code. Trying again."
-  make JOBS=$jobs images
+  make ENABLE_XOM=false JOBS=$jobs images
 fi
