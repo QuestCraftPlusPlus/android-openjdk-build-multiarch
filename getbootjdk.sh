@@ -13,4 +13,4 @@ if [ "$BUILD_IOS" != "1" ]; then
 else
   wget https://download.java.net/java/GA/jdk23.0.1/c28985cbf10d4e648e4004050f8781aa/11/GPL/openjdk-23.0.1_macos-aarch64_bin.tar.gz
 fi
-tar xvf openjdk-22*.tar.gz
+tar xvf openjdk-23*.tar.gz
