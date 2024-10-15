@@ -9,8 +9,7 @@ set -e
 # Please change if you have different architecture.
 
 if [ "$BUILD_IOS" != "1" ]; then
-  wget https://download.java.net/java/GA/jdk22.0.1/c7ec1332f7bb44aeba2eb341ae18aca4/8/GPL/openjdk-23.0.1_linux-x64_bin.tar.gz
+  wget https://download.java.net/java/GA/jdk23.0.1/c28985cbf10d4e648e4004050f8781aa/11/GPL/openjdk-23.0.1_linux-x64_bin.tar.gz
 else
-  wget https://download.java.net/java/GA/jdk22.0.1/c7ec1332f7bb44aeba2eb341ae18aca4/8/GPL/openjdk-23.0.1_macos-aarch64_bin.tar.gz
-fi
+  wget https://download.java.net/java/GA/jdk23.0.1/c28985cbf10d4e648e4004050f8781aa/11/GPL/openjdk-23.0.1_macos-aarch64_bin.tar.gz
 tar xvf openjdk-22*.tar.gz
