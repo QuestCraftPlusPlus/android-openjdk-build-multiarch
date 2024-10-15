@@ -81,6 +81,7 @@ cd openjdk
 git reset --hard
 if [ "$BUILD_IOS" != "1" ]; then
   #git apply --reject --whitespace=fix ../patches/jdk21u_android.diff || echo "git apply failed (Android patch set)"
+  echo "Disabled Android Patches"
 else
   git apply --reject --whitespace=fix ../patches/jdk21u_ios.diff || echo "git apply failed (iOS patch set)"
 
