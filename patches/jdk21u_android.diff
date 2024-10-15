@@ -7,16 +7,13 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 ===================================================================
 diff --git a/src/hotspot/share/utilities/elfFile.hpp b/src/hotspot/share/utilities/elfFile.hpp
 --- a/src/hotspot/share/utilities/elfFile.hpp	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/hotspot/share/utilities/elfFile.hpp	(revision cffed6fbf85b01490e53fd8339ba0e8035445332)
-@@ -46,6 +46,11 @@
++++ b/src/hotspot/share/utilities/elfFile.hpp	(revision ccd7f774bc9a3e790b9025d32e4df145999cbcca)
+@@ -46,7 +46,7 @@
  typedef Elf64_Phdr      Elf_Phdr;
  typedef Elf64_Sym       Elf_Sym;
  
-+#if defined(__ANDROID__)
-+static inline unsigned char ELF32_ST_TYPE(unsigned char st_info) { return st_info & 0x0f; }
-+static inline unsigned char ELF64_ST_TYPE(unsigned char st_info) { return st_info & 0x0f; }
-+#endif
-+
- #if !defined(_ALLBSD_SOURCE) || defined(__APPLE__)
+-#if !defined(_ALLBSD_SOURCE) || defined(__APPLE__)
++#if (!defined(__ANDROID__) && !defined(_ALLBSD_SOURCE)) || defined(__APPLE__)
  #define ELF_ST_TYPE ELF64_ST_TYPE
  #endif
+ 
