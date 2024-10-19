@@ -18,9 +18,6 @@ jobs:
     name: "Build Java ${{ matrix.version }} for Android ${{matrix.arch}}"
     runs-on: self-hosted
     steps:
-      - name: Cleanup Workspace
-        uses: asilbek99/action-cleanup@v1.0
-      
       - name: Checkout repository
         uses: actions/checkout@v4
 
