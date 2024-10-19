@@ -68,7 +68,7 @@ else
     ln -s -f /usr/local/include/fontconfig $ANDROID_INCLUDE/
   fi
   platform_args="--with-toolchain-type=clang --with-sysroot=$(xcrun --sdk iphoneos --show-sdk-path) \
-    --with-boot-jdk=$(/usr/libexec/java_home -v $TARGET_VERSION) \
+    --with-boot-jdk=$(/usr/libexec/java_home -v 23) \
     --with-freetype=bundled \
     "
   AUTOCONF_x11arg="--with-x=/opt/X11/include/X11 --prefix=/usr/lib"
