@@ -27,6 +27,7 @@ if [ ! -d "cups-2.2.4" ]; then
   ./4_buildlibs.sh
 fi
 ./5_clonejdk.sh
+chown -R $USER:$USER $GITHUB_WORKSPACE
 ./6_buildjdk.sh
 ./7_removejdkdebuginfo.sh
 ./8_tarjdk.sh
