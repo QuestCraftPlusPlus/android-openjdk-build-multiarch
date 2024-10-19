@@ -18,12 +18,10 @@ jobs:
     name: "Build Java ${{ matrix.version }} for Android ${{matrix.arch}}"
     runs-on: self-hosted
     steps:
+      - uses: asilbek99/action-cleanup@v1
+      
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Chown user
-        run: |
-          echo ${{ secrets.USERPWD }} | sudo -S chown -R $USER:$USER $GITHUB_WORKSPACE
 
       - name: set up JDK 23
         uses: actions/setup-java@v4
