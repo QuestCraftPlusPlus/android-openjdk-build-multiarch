@@ -37,7 +37,7 @@ if [[ "$BUILD_IOS" != "1" ]]; then
     --with-freetype-lib=$FREETYPE_DIR/lib \
     "
 
-  if [[ $TARGET_VERSION -eq 21 ]]; then
+  if [[ $TARGET_VERSION -eq 24 ]]; then
     platform_args+="--build=x86_64-unknown-linux-gnu \
     "
   fi

@@ -4,7 +4,7 @@ export NDK_VERSION=r27b
 # Target version is either 17 or 21
 if [[ -z "$TARGET_VERSION" ]]
 then
-  export TARGET_VERSION=21
+  export TARGET_VERSION=24
 fi
 
 
