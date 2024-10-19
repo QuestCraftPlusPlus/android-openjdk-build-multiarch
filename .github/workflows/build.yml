@@ -21,10 +21,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: set up JDK 1.${{ matrix.version }}
+      - name: set up JDK 23
         uses: actions/setup-java@v4
         with:
-          java-version: ${{ matrix.version }}
+          java-version: 23
           distribution: temurin
 
       - name: Install build dependencies
