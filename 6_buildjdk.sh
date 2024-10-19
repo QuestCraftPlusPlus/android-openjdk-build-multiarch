@@ -117,6 +117,7 @@ bash ./configure \
     --with-jvm-features=-dtrace,-zero,-vm-structs,-epsilongc \
     --with-cups-include=$CUPS_DIR \
     --with-devkit=$TOOLCHAIN \
+    --with-boot-jdk=/home/compiler/actions-runner/_work/_tool/Java_Temurin-Hotspot_jdk/23.0.1-11/x64 \
     --with-native-debug-symbols=external \
     --with-debug-level=$JDK_DEBUG_LEVEL \
     --with-fontconfig-include=$ANDROID_INCLUDE \
