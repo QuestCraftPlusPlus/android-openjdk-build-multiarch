@@ -6,8 +6,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/configure b/configure
---- a/configure	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/configure	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/configure	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/configure	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -28,10 +28,6 @@
  # Get an absolute path to this script, since that determines the top-level directory.
  source_path="$(dirname ${0})"
@@ -25,8 +25,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/make/autoconf/flags-cflags.m4 b/make/autoconf/flags-cflags.m4
---- a/make/autoconf/flags-cflags.m4	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/make/autoconf/flags-cflags.m4	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/make/autoconf/flags-cflags.m4	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/make/autoconf/flags-cflags.m4	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -458,7 +458,8 @@
    #### OS DEFINES, these should be independent on toolchain
    if test "x$OPENJDK_TARGET_OS" = xlinux; then
@@ -43,8 +43,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/make/autoconf/flags-ldflags.m4 b/make/autoconf/flags-ldflags.m4
---- a/make/autoconf/flags-ldflags.m4	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/make/autoconf/flags-ldflags.m4	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/make/autoconf/flags-ldflags.m4	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/make/autoconf/flags-ldflags.m4	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -173,7 +173,9 @@
          test "x${OPENJDK_$1_CPU}" = xmips64el; then
        $1_CPU_LDFLAGS="${$1_CPU_LDFLAGS} -Wl,--hash-style=sysv"
@@ -62,8 +62,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/make/autoconf/lib-freetype.m4 b/make/autoconf/lib-freetype.m4
---- a/make/autoconf/lib-freetype.m4	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/make/autoconf/lib-freetype.m4	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/make/autoconf/lib-freetype.m4	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/make/autoconf/lib-freetype.m4	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -105,7 +105,8 @@
    FREETYPE_TO_USE=bundled
    if test "x$OPENJDK_TARGET_OS" != "xwindows" && \
@@ -80,8 +80,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/make/autoconf/libraries.m4 b/make/autoconf/libraries.m4
---- a/make/autoconf/libraries.m4	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/make/autoconf/libraries.m4	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/make/autoconf/libraries.m4	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/make/autoconf/libraries.m4	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -42,8 +42,8 @@
  AC_DEFUN_ONCE([LIB_DETERMINE_DEPENDENCIES],
  [
@@ -110,8 +110,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/make/autoconf/platform.m4 b/make/autoconf/platform.m4
---- a/make/autoconf/platform.m4	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/make/autoconf/platform.m4	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/make/autoconf/platform.m4	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/make/autoconf/platform.m4	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -202,6 +202,10 @@
        VAR_OS=linux
        VAR_OS_TYPE=unix
@@ -129,9 +129,9 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/make/autoconf/toolchain.m4 b/make/autoconf/toolchain.m4
---- a/make/autoconf/toolchain.m4	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/make/autoconf/toolchain.m4	(revision fd95775401eb487b8667dde7928170d232c37de5)
-@@ -868,11 +868,14 @@
+--- a/make/autoconf/toolchain.m4	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/make/autoconf/toolchain.m4	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
+@@ -870,11 +870,14 @@
  
      PATH="$OLDPATH"
  
@@ -157,8 +157,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/make/common/JdkNativeCompilation.gmk b/make/common/JdkNativeCompilation.gmk
---- a/make/common/JdkNativeCompilation.gmk	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/make/common/JdkNativeCompilation.gmk	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/make/common/JdkNativeCompilation.gmk	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/make/common/JdkNativeCompilation.gmk	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -35,6 +35,12 @@
  # Hook to include the corresponding custom file, if present.
  $(eval $(call IncludeCustomExtension, common/JdkNativeCompilation.gmk))
@@ -178,8 +178,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/make/common/Modules.gmk b/make/common/Modules.gmk
---- a/make/common/Modules.gmk	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/make/common/Modules.gmk	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/make/common/Modules.gmk	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/make/common/Modules.gmk	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -83,6 +83,10 @@
  TOP_SRC_DIRS += \
      $(TOPDIR)/src \
@@ -197,8 +197,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/make/common/Utils.gmk b/make/common/Utils.gmk
---- a/make/common/Utils.gmk	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/make/common/Utils.gmk	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/make/common/Utils.gmk	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/make/common/Utils.gmk	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -160,6 +160,12 @@
  isTargetOs = \
    $(strip $(if $(filter $(OPENJDK_TARGET_OS), $1), true, false))
@@ -218,8 +218,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/make/hotspot/lib/JvmOverrideFiles.gmk b/make/hotspot/lib/JvmOverrideFiles.gmk
---- a/make/hotspot/lib/JvmOverrideFiles.gmk	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/make/hotspot/lib/JvmOverrideFiles.gmk	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/make/hotspot/lib/JvmOverrideFiles.gmk	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/make/hotspot/lib/JvmOverrideFiles.gmk	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -59,7 +59,8 @@
  	#
    endif
@@ -236,8 +236,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/make/modules/java.base/lib/CoreLibraries.gmk b/make/modules/java.base/lib/CoreLibraries.gmk
---- a/make/modules/java.base/lib/CoreLibraries.gmk	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/make/modules/java.base/lib/CoreLibraries.gmk	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/make/modules/java.base/lib/CoreLibraries.gmk	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/make/modules/java.base/lib/CoreLibraries.gmk	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -71,6 +71,10 @@
      LIBS_windows := advapi32.lib ole32.lib shell32.lib version.lib, \
  ))
@@ -255,8 +255,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/make/modules/java.desktop/Lib.gmk b/make/modules/java.desktop/Lib.gmk
---- a/make/modules/java.desktop/Lib.gmk	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/make/modules/java.desktop/Lib.gmk	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/make/modules/java.desktop/Lib.gmk	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/make/modules/java.desktop/Lib.gmk	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -80,7 +80,7 @@
        LIBS_windows := advapi32.lib dsound.lib ole32.lib user32.lib winmm.lib, \
    ))
@@ -272,8 +272,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/make/modules/java.instrument/Lib.gmk b/make/modules/java.instrument/Lib.gmk
---- a/make/modules/java.instrument/Lib.gmk	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/make/modules/java.instrument/Lib.gmk	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/make/modules/java.instrument/Lib.gmk	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/make/modules/java.instrument/Lib.gmk	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -33,9 +33,11 @@
  $(eval $(call SetupJdkLibrary, BUILD_LIBINSTRUMENT, \
      NAME := instrument, \
@@ -292,8 +292,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/make/modules/jdk.hotspot.agent/Lib.gmk b/make/modules/jdk.hotspot.agent/Lib.gmk
---- a/make/modules/jdk.hotspot.agent/Lib.gmk	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/make/modules/jdk.hotspot.agent/Lib.gmk	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/make/modules/jdk.hotspot.agent/Lib.gmk	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/make/modules/jdk.hotspot.agent/Lib.gmk	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -78,4 +78,4 @@
      LIBS_windows := dbgeng.lib, \
  ))
@@ -306,8 +306,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/make/modules/jdk.jdwp.agent/Lib.gmk b/make/modules/jdk.jdwp.agent/Lib.gmk
---- a/make/modules/jdk.jdwp.agent/Lib.gmk	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/make/modules/jdk.jdwp.agent/Lib.gmk	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/make/modules/jdk.jdwp.agent/Lib.gmk	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/make/modules/jdk.jdwp.agent/Lib.gmk	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -52,6 +52,7 @@
      NAME := jdwp, \
      OPTIMIZATION := LOW, \
@@ -330,8 +330,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/hotspot/cpu/arm/icache_arm.cpp b/src/hotspot/cpu/arm/icache_arm.cpp
---- a/src/hotspot/cpu/arm/icache_arm.cpp	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/hotspot/cpu/arm/icache_arm.cpp	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/hotspot/cpu/arm/icache_arm.cpp	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/hotspot/cpu/arm/icache_arm.cpp	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -31,7 +31,7 @@
  
  
@@ -347,8 +347,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/hotspot/os/linux/gc/x/xNUMA_linux.cpp b/src/hotspot/os/linux/gc/x/xNUMA_linux.cpp
---- a/src/hotspot/os/linux/gc/x/xNUMA_linux.cpp	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/hotspot/os/linux/gc/x/xNUMA_linux.cpp	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/hotspot/os/linux/gc/x/xNUMA_linux.cpp	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/hotspot/os/linux/gc/x/xNUMA_linux.cpp	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -31,41 +31,17 @@
  #include "utilities/debug.hpp"
  
@@ -403,8 +403,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/hotspot/os/linux/gc/z/zNUMA_linux.cpp b/src/hotspot/os/linux/gc/z/zNUMA_linux.cpp
---- a/src/hotspot/os/linux/gc/z/zNUMA_linux.cpp	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/hotspot/os/linux/gc/z/zNUMA_linux.cpp	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/hotspot/os/linux/gc/z/zNUMA_linux.cpp	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/hotspot/os/linux/gc/z/zNUMA_linux.cpp	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -31,41 +31,17 @@
  #include "utilities/debug.hpp"
  
@@ -459,8 +459,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/hotspot/os/linux/os_linux.cpp b/src/hotspot/os/linux/os_linux.cpp
---- a/src/hotspot/os/linux/os_linux.cpp	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/hotspot/os/linux/os_linux.cpp	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/hotspot/os/linux/os_linux.cpp	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/hotspot/os/linux/os_linux.cpp	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -145,10 +145,10 @@
  // for timer info max values which include all bits
  #define ALL_64_BITS CONST64(0xFFFFFFFFFFFFFFFF)
@@ -608,7 +608,7 @@ diff --git a/src/hotspot/os/linux/os_linux.cpp b/src/hotspot/os/linux/os_linux.c
 +#else // !__ANDROID__
    char *rp = nullptr;
    if (ret && dli_fname[0] != '\0') {
-     rp = os::Posix::realpath(dli_fname, buf, buflen);
+     rp = os::realpath(dli_fname, buf, buflen);
 @@ -2826,6 +2882,7 @@
        }
      }
@@ -644,7 +644,7 @@ diff --git a/src/hotspot/os/linux/os_linux.cpp b/src/hotspot/os/linux/os_linux.c
  }
  
  bool os::Linux::libnuma_init() {
-@@ -5187,7 +5239,46 @@
+@@ -5177,7 +5229,46 @@
  // Linux doesn't yet have a (official) notion of processor sets,
  // so just return the system wide load average.
  int os::loadavg(double loadavg[], int nelem) {
@@ -698,8 +698,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/hotspot/os/linux/os_perf_linux.cpp b/src/hotspot/os/linux/os_perf_linux.cpp
---- a/src/hotspot/os/linux/os_perf_linux.cpp	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/hotspot/os/linux/os_perf_linux.cpp	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/hotspot/os/linux/os_perf_linux.cpp	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/hotspot/os/linux/os_perf_linux.cpp	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -45,9 +45,312 @@
  #include <dlfcn.h>
  #include <pthread.h>
@@ -1019,8 +1019,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/hotspot/os/posix/os_posix.cpp b/src/hotspot/os/posix/os_posix.cpp
---- a/src/hotspot/os/posix/os_posix.cpp	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/hotspot/os/posix/os_posix.cpp	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/hotspot/os/posix/os_posix.cpp	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/hotspot/os/posix/os_posix.cpp	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -81,7 +81,9 @@
  #include <sys/wait.h>
  #include <time.h>
@@ -1031,7 +1031,7 @@ diff --git a/src/hotspot/os/posix/os_posix.cpp b/src/hotspot/os/posix/os_posix.c
  
  #ifdef __APPLE__
    #include <crt_externs.h>
-@@ -540,6 +542,7 @@
+@@ -545,6 +547,7 @@
  // unfortunately it does not work on macOS and Linux because the utx chain has no entry
  // for reboot at least on my test machines
  void os::Posix::print_uptime_info(outputStream* st) {
@@ -1039,7 +1039,7 @@ diff --git a/src/hotspot/os/posix/os_posix.cpp b/src/hotspot/os/posix/os_posix.c
    int bootsec = -1;
    time_t currsec = time(nullptr);
    struct utmpx* ent;
-@@ -554,6 +557,7 @@
+@@ -559,6 +562,7 @@
    if (bootsec != -1) {
      os::print_dhm(st, "OS uptime:", currsec-bootsec);
    }
@@ -1047,7 +1047,7 @@ diff --git a/src/hotspot/os/posix/os_posix.cpp b/src/hotspot/os/posix/os_posix.c
  }
  
  static void print_rlimit(outputStream* st, const char* msg,
-@@ -2033,11 +2037,31 @@
+@@ -2037,11 +2041,31 @@
    const char* argv[4] = {"sh", "-c", cmd, nullptr};
    pid_t pid = -1;
    char** env = os::get_environ();
@@ -1079,7 +1079,7 @@ diff --git a/src/hotspot/os/posix/os_posix.cpp b/src/hotspot/os/posix/os_posix.c
      int status;
      // Wait for the child process to exit.  This returns immediately if
      // the child has already exited. */
-@@ -2062,9 +2086,11 @@
+@@ -2066,9 +2090,11 @@
        // Unknown exit code; pass it through
        return status;
      }
@@ -1097,8 +1097,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/hotspot/os_cpu/linux_aarch64/javaThread_linux_aarch64.hpp b/src/hotspot/os_cpu/linux_aarch64/javaThread_linux_aarch64.hpp
---- a/src/hotspot/os_cpu/linux_aarch64/javaThread_linux_aarch64.hpp	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/hotspot/os_cpu/linux_aarch64/javaThread_linux_aarch64.hpp	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/hotspot/os_cpu/linux_aarch64/javaThread_linux_aarch64.hpp	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/hotspot/os_cpu/linux_aarch64/javaThread_linux_aarch64.hpp	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -47,6 +47,8 @@
    bool pd_get_top_frame(frame* fr_addr, void* ucontext, bool isInJava);
  public:
@@ -1115,8 +1115,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/hotspot/os_cpu/linux_aarch64/threadLS_linux_aarch64.S b/src/hotspot/os_cpu/linux_aarch64/threadLS_linux_aarch64.S
---- a/src/hotspot/os_cpu/linux_aarch64/threadLS_linux_aarch64.S	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/hotspot/os_cpu/linux_aarch64/threadLS_linux_aarch64.S	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/hotspot/os_cpu/linux_aarch64/threadLS_linux_aarch64.S	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/hotspot/os_cpu/linux_aarch64/threadLS_linux_aarch64.S	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -22,6 +22,7 @@
  
  #include "defs.S.inc"
@@ -1138,8 +1138,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 ===================================================================
 diff --git a/src/hotspot/os_cpu/linux_arm/fpu_control.h b/src/hotspot/os_cpu/linux_arm/fpu_control.h
 new file mode 100644
---- /dev/null	(revision fd95775401eb487b8667dde7928170d232c37de5)
-+++ b/src/hotspot/os_cpu/linux_arm/fpu_control.h	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- /dev/null	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
++++ b/src/hotspot/os_cpu/linux_arm/fpu_control.h	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -0,0 +1,59 @@
 +/* FPU control word definitions.  ARM VFP version.
 +   Copyright (C) 2004-2019 Free Software Foundation, Inc.
@@ -1206,8 +1206,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/hotspot/os_cpu/linux_arm/linux_arm_32.S b/src/hotspot/os_cpu/linux_arm/linux_arm_32.S
---- a/src/hotspot/os_cpu/linux_arm/linux_arm_32.S	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/hotspot/os_cpu/linux_arm/linux_arm_32.S	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/hotspot/os_cpu/linux_arm/linux_arm_32.S	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/hotspot/os_cpu/linux_arm/linux_arm_32.S	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -66,7 +66,7 @@
          stmia to!, {r3 - r9, ip}
          bgt     dw_f2b_loop_32
@@ -1334,8 +1334,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/hotspot/os_cpu/linux_arm/os_linux_arm.cpp b/src/hotspot/os_cpu/linux_arm/os_linux_arm.cpp
---- a/src/hotspot/os_cpu/linux_arm/os_linux_arm.cpp	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/hotspot/os_cpu/linux_arm/os_linux_arm.cpp	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/hotspot/os_cpu/linux_arm/os_linux_arm.cpp	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/hotspot/os_cpu/linux_arm/os_linux_arm.cpp	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -71,7 +71,11 @@
  # include <pwd.h>
  # include <poll.h>
@@ -1381,8 +1381,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 ===================================================================
 diff --git a/src/hotspot/os_cpu/linux_x86/fpu_control.h b/src/hotspot/os_cpu/linux_x86/fpu_control.h
 new file mode 100644
---- /dev/null	(revision fd95775401eb487b8667dde7928170d232c37de5)
-+++ b/src/hotspot/os_cpu/linux_x86/fpu_control.h	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- /dev/null	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
++++ b/src/hotspot/os_cpu/linux_x86/fpu_control.h	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -0,0 +1,109 @@
 +/* FPU control word bits.  x86 version.
 +   Copyright (C) 1993-2012 Free Software Foundation, Inc.
@@ -1499,8 +1499,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/hotspot/os_cpu/linux_x86/os_linux_x86.cpp b/src/hotspot/os_cpu/linux_x86/os_linux_x86.cpp
---- a/src/hotspot/os_cpu/linux_x86/os_linux_x86.cpp	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/hotspot/os_cpu/linux_x86/os_linux_x86.cpp	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/hotspot/os_cpu/linux_x86/os_linux_x86.cpp	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/hotspot/os_cpu/linux_x86/os_linux_x86.cpp	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -73,8 +73,10 @@
  # include <pwd.h>
  # include <poll.h>
@@ -1519,8 +1519,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/hotspot/share/utilities/elfFile.hpp b/src/hotspot/share/utilities/elfFile.hpp
---- a/src/hotspot/share/utilities/elfFile.hpp	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/hotspot/share/utilities/elfFile.hpp	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/hotspot/share/utilities/elfFile.hpp	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/hotspot/share/utilities/elfFile.hpp	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -47,8 +47,10 @@
  typedef Elf64_Sym       Elf_Sym;
  
@@ -1547,8 +1547,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/hotspot/share/utilities/globalDefinitions_gcc.hpp b/src/hotspot/share/utilities/globalDefinitions_gcc.hpp
---- a/src/hotspot/share/utilities/globalDefinitions_gcc.hpp	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/hotspot/share/utilities/globalDefinitions_gcc.hpp	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/hotspot/share/utilities/globalDefinitions_gcc.hpp	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/hotspot/share/utilities/globalDefinitions_gcc.hpp	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -59,6 +59,10 @@
  #include <limits.h>
  #include <errno.h>
@@ -1568,8 +1568,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 diff --git a/src/java.base/share/classes/sun/launcher/resources/launcher.properties b/src/java.base/share/classes/sun/launcher/resources/launcher_en.properties
 rename from src/java.base/share/classes/sun/launcher/resources/launcher.properties
 rename to src/java.base/share/classes/sun/launcher/resources/launcher_en.properties
---- a/src/java.base/share/classes/sun/launcher/resources/launcher.properties	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/java.base/share/classes/sun/launcher/resources/launcher_en.properties	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/java.base/share/classes/sun/launcher/resources/launcher.properties	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/java.base/share/classes/sun/launcher/resources/launcher_en.properties	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -1,5 +1,5 @@
  #
 -# Copyright (c) 2007, 2024, Oracle and/or its affiliates. All rights reserved.
@@ -1727,8 +1727,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 ===================================================================
 diff --git a/src/java.base/share/native/libtinyiconv/iconv.cpp b/src/java.base/share/native/libtinyiconv/iconv.cpp
 new file mode 100644
---- /dev/null	(revision fd95775401eb487b8667dde7928170d232c37de5)
-+++ b/src/java.base/share/native/libtinyiconv/iconv.cpp	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- /dev/null	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
++++ b/src/java.base/share/native/libtinyiconv/iconv.cpp	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -0,0 +1,438 @@
 +/*
 + * Copyright (C) 2017 The Android Open Source Project
@@ -2174,8 +2174,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/java.base/unix/classes/sun/net/dns/ResolverConfigurationImpl.java b/src/java.base/unix/classes/sun/net/dns/ResolverConfigurationImpl.java
---- a/src/java.base/unix/classes/sun/net/dns/ResolverConfigurationImpl.java	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/java.base/unix/classes/sun/net/dns/ResolverConfigurationImpl.java	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/java.base/unix/classes/sun/net/dns/ResolverConfigurationImpl.java	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/java.base/unix/classes/sun/net/dns/ResolverConfigurationImpl.java	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -63,8 +63,9 @@
          ArrayList<String> ll = new ArrayList<>();
  
@@ -2193,8 +2193,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/java.base/unix/native/libjava/java_props_md.c b/src/java.base/unix/native/libjava/java_props_md.c
---- a/src/java.base/unix/native/libjava/java_props_md.c	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/java.base/unix/native/libjava/java_props_md.c	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/java.base/unix/native/libjava/java_props_md.c	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/java.base/unix/native/libjava/java_props_md.c	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -46,6 +46,100 @@
  #include "java_props_macosx.h"
  #endif
@@ -2302,8 +2302,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/java.base/unix/native/libjava/jni_util_md.c b/src/java.base/unix/native/libjava/jni_util_md.c
---- a/src/java.base/unix/native/libjava/jni_util_md.c	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/java.base/unix/native/libjava/jni_util_md.c	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/java.base/unix/native/libjava/jni_util_md.c	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/java.base/unix/native/libjava/jni_util_md.c	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -31,7 +31,7 @@
  #include "jni_util.h"
  #include "dlfcn.h"
@@ -2320,8 +2320,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 ===================================================================
 diff --git a/src/java.base/unix/native/libjava/posix_spawn.c b/src/java.base/unix/native/libjava/posix_spawn.c
 new file mode 100644
---- /dev/null	(revision fd95775401eb487b8667dde7928170d232c37de5)
-+++ b/src/java.base/unix/native/libjava/posix_spawn.c	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- /dev/null	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
++++ b/src/java.base/unix/native/libjava/posix_spawn.c	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -0,0 +1,147 @@
 +// From https://android.googlesource.com/platform/external/dhcpcd-6.8.2/+/refs/heads/pie-dr1-release/compat/posix_spawn.c
 +/*
@@ -2477,8 +2477,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 ===================================================================
 diff --git a/src/java.base/unix/native/libjava/posix_spawn.h b/src/java.base/unix/native/libjava/posix_spawn.h
 new file mode 100644
---- /dev/null	(revision fd95775401eb487b8667dde7928170d232c37de5)
-+++ b/src/java.base/unix/native/libjava/posix_spawn.h	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- /dev/null	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
++++ b/src/java.base/unix/native/libjava/posix_spawn.h	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -0,0 +1,53 @@
 +// From https://android.googlesource.com/platform/external/dhcpcd-6.8.2/+/refs/heads/pie-dr1-release/compat/posix_spawn.h
 +/*
@@ -2539,8 +2539,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/java.base/unix/native/libjli/java_md.c b/src/java.base/unix/native/libjli/java_md.c
---- a/src/java.base/unix/native/libjli/java_md.c	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/java.base/unix/native/libjli/java_md.c	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/java.base/unix/native/libjli/java_md.c	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/java.base/unix/native/libjli/java_md.c	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -567,7 +567,58 @@
  SetExecname(char **argv)
  {
@@ -2618,8 +2618,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/java.base/unix/native/libnet/net_util_md.h b/src/java.base/unix/native/libnet/net_util_md.h
---- a/src/java.base/unix/native/libnet/net_util_md.h	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/java.base/unix/native/libnet/net_util_md.h	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/java.base/unix/native/libnet/net_util_md.h	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/java.base/unix/native/libnet/net_util_md.h	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -26,6 +26,9 @@
  #ifndef NET_UTILS_MD_H
  #define NET_UTILS_MD_H
@@ -2636,8 +2636,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/java.base/unix/native/libnio/fs/UnixNativeDispatcher.c b/src/java.base/unix/native/libnio/fs/UnixNativeDispatcher.c
---- a/src/java.base/unix/native/libnio/fs/UnixNativeDispatcher.c	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/java.base/unix/native/libnio/fs/UnixNativeDispatcher.c	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/java.base/unix/native/libnio/fs/UnixNativeDispatcher.c	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/java.base/unix/native/libnio/fs/UnixNativeDispatcher.c	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -66,12 +66,14 @@
  // by defining binary compatible statx structs in this file and
  // not relying on included headers.
@@ -2781,8 +2781,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/java.desktop/unix/native/libawt/awt/awt_LoadLibrary.c b/src/java.desktop/unix/native/libawt/awt/awt_LoadLibrary.c
---- a/src/java.desktop/unix/native/libawt/awt/awt_LoadLibrary.c	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/java.desktop/unix/native/libawt/awt/awt_LoadLibrary.c	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/java.desktop/unix/native/libawt/awt/awt_LoadLibrary.c	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/java.desktop/unix/native/libawt/awt/awt_LoadLibrary.c	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -30,6 +30,7 @@
  #include <jni.h>
  #include <jni_util.h>
@@ -2841,8 +2841,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/java.instrument/unix/native/libinstrument/EncodingSupport_md.c b/src/java.instrument/unix/native/libinstrument/EncodingSupport_md.c
---- a/src/java.instrument/unix/native/libinstrument/EncodingSupport_md.c	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/java.instrument/unix/native/libinstrument/EncodingSupport_md.c	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/java.instrument/unix/native/libinstrument/EncodingSupport_md.c	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/java.instrument/unix/native/libinstrument/EncodingSupport_md.c	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -65,7 +65,11 @@
      (void)setlocale(LC_ALL, "");
  
@@ -2861,8 +2861,8 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 <+>UTF-8
 ===================================================================
 diff --git a/src/jdk.jdwp.agent/share/native/libjdwp/utf_util.c b/src/jdk.jdwp.agent/share/native/libjdwp/utf_util.c
---- a/src/jdk.jdwp.agent/share/native/libjdwp/utf_util.c	(revision 374eaf89e67d07479b1cc744b7f190b1836dbc84)
-+++ b/src/jdk.jdwp.agent/share/native/libjdwp/utf_util.c	(revision fd95775401eb487b8667dde7928170d232c37de5)
+--- a/src/jdk.jdwp.agent/share/native/libjdwp/utf_util.c	(revision 7a64fbbb9292f4d65a6970206dec1a7d7645046b)
++++ b/src/jdk.jdwp.agent/share/native/libjdwp/utf_util.c	(revision 82241a6d4ae1d800710024b85380dbf5d2012b2c)
 @@ -483,7 +483,11 @@
          // locale is not initialized, do it now
          if (setlocale(LC_ALL, "") != NULL) {
