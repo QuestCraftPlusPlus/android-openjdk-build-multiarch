@@ -20,7 +20,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
     - name: Build with CI build script
-      run: bash "ci_build_arch_${{matrix.arch}}.sh"
+      run: echo ${{ secrets.USERPWD }} | sudo -S bash "ci_build_arch_${{matrix.arch}}.sh"
     - name: Upload JDK build output
       uses: actions/upload-artifact@v4
       with:
