@@ -12,7 +12,7 @@ if [[ "$BUILD_IOS" != "1" ]]; then
   cp freetype-$BUILD_FREETYPE_VERSION/build_android-$TARGET_SHORT/lib/libfreetype.so $imagespath/jdk/lib/
 fi
 
-cp -r $imagespath/jdk jdkout
+cp -r $imagespath/graal-builder-jdk jdkout
 
 # JDK no longer create separate JRE image, so we have to create one manually.
 #mkdir -p jreout/bin
