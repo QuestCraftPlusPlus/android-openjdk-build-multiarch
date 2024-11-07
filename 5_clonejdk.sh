@@ -2,9 +2,7 @@
 set -e
 
 if [[ $TARGET_VERSION -eq 24 ]]; then
-    git clone https://github.com/openjdk/jdk.git openjdk
-    cd openjdk
-    git checkout pull/20677
+    git clone --branch "JDK-8305895-v4" --depth 1 https://github.com/rkennke/jdk.git openjdk
 else
     git clone --depth 1 https://github.com/openjdk/jdk17u openjdk-17
 fi
