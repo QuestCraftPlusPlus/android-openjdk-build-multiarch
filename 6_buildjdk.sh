@@ -83,7 +83,7 @@ fi
 # fix building libjawt
 ln -s -f $CUPS_DIR/cups $ANDROID_INCLUDE/
 
-cd openjdk
+cd openjdk-21
 
 # Apply patches
 git reset --hard
